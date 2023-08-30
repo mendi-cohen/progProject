@@ -1,0 +1,478 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Tinos", serif;
+  background-color: #f0f4f8; /* צבע רקע כללי */
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff00ae; /* צבע רקע */
+  padding: 20px;
+  text-align: center;
+}
+
+.schoolHead h1 {
+  font-size: 30px;
+  color: #ffffff; /* צבע טקסט */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  animation-name: header;
+  animation-duration: 5s;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* עיצוב כותרת בגרסאות של טלפונים */
+@media (max-width: 768px) {
+  .schoolHead h1 {
+    font-size: 24px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* עיצוב לכותרת h1 */
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.schoolcontect {
+  display: flex;
+  flex-direction: column;
+}
+
+/* עיצוב לתיבת .home-work */
+.home-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eab7e2; /* צבע רקע של תיבת הכותרת */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* עיצוב לתיבת .sub-home-work */
+.sub-home-work {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+
+/* עיצוב לקישורים בתיבת .div-home-work */
+.div-home-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 100px;
+  background-color: #ffffff; /* צבע רקע של קישורים בתיבת .div-home-work */
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.div-home-work:hover {
+  background-color: rgba(94, 73, 232, 0.4470588235); /* צבע רקע בהשגחה לרקע של קישורים כאשר העכבר עובר עליהם */
+}
+
+/* צבע כחול בהשגחה לטקסט של קישורים כאשר העכבר עובר עליהם */
+.div-home-work a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.talkToSchool {
+  background-color: #c627bb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.talkToSchool h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.talkToSchool textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  resize: none;
+}
+
+.talkToSchool button {
+  margin-top: 10px;
+  background-color: #4b8cff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.talkToSchool button:hover {
+  background-color: #c435b1;
+  transform: translateY(-2px);
+}
+
+.uplodefilse {
+  text-align: center;
+}
+
+.uplodefilse form {
+  display: flex;
+  flex-direction: column;
+}
+
+.myfilse {
+  background-color: #4b8cff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.myfilse:hover {
+  background-color: #ae1cb4;
+  transform: translateY(-2px);
+}
+
+/* עיצוב לתמונת האירוע */
+#img {
+  border: 5px solid black;
+  width: 600px;
+  height: 200px;
+  background-image: url("https://example.com/path/to/your/image.jpg"); /* תמונה של האירוע */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* עיצוב לכותרת באירועים */
+.main-ads h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #00aeff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: rgba(247, 112, 242, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+.main-ads h1:hover {
+  color: #e04000;
+}
+
+.sub-ads {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+  gap: 8px;
+}
+
+.div-ads {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 140px;
+  width: 220px;
+  background-color: #add8e6;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.div-ads::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("תמונה של האירוע"); /* תמונה של האירוע */
+  transition: transform 0.5s ease;
+}
+
+/* התמונה תזוז קצת כשהקלקת עליה */
+.div-ads:hover::before {
+  transform: translateY(-10%);
+}
+
+#ads1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjGfQ5-MkvqR46-B_F1We2eKso_ihiydh6g&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads2 {
+  background-image: url("https://i.ytimg.com/vi/F5QVWy0yvUE/mqdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads3 {
+  background-image: url("https://orm-center.org/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-13-at-12.59.28.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads4 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9oAImT0OcGhgiNx5jLcSoUF4gRIPMDdvtA&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads5 {
+  background-image: url("https://media.neshei.com/wp-content/uploads/2017/08/02-08-2017-09-01-40-Downloads2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads6 {
+  background-image: url("https://metchy.com/bonim_atid/media/banner5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads7 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/causematch-static-content/wp-content/uploads/2019/06/18092538/%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%9E%D7%AA%D7%A8%D7%99%D7%9E%D7%99%D7%9D1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads8 {
+  background-image: url("https://media.chabad.info/chabadinfoheb/wp-content/uploads/2016/09/07-09-2016-00-15-04-WhatsApp-Image-2016-08-17-at-4.19.27-PM-1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ads9 {
+  background-image: url("https://chabadpedia.co.il/images/thumb/6/69/%D7%98%D7%A0%D7%A7_%D7%97%D7%93%D7%A9.png/250px-%D7%98%D7%A0%D7%A7_%D7%97%D7%93%D7%A9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.disable {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.disabled:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.theBook {
+  display: flex;
+  justify-content: center;
+}
+
+#book {
+  font-size: 18px;
+  color: #e64484;
+  background-color: #00ffea; /* צבע רקע */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#book:hover {
+  background-color: #46f1bb;
+}
+
+.div-ads:hover::after {
+  opacity: 1;
+}
+
+/* עיצוב לתפריט השכבות */
+.the-classes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  animation-name: classes;
+  animation-duration: 3s;
+  background-color: ghostwhite;
+}
+
+.classes {
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 25px;
+  font-size: medium;
+  background-color: #6b63b6; /* צבע סגול לרקע של הכפתורים בתפריט השכבות */
+  color: azure;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation-name: classes;
+  animation-duration: 5s;
+}
+
+@keyframes classes {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.classes:hover {
+  transform: translateY(-5px);
+}
+
+/* עיצוב לשכבה כאשר נלחץ עליה */
+.classes:active {
+  transform: translateY(5px);
+  background-color: #32a8a8; /* צבע תכלת בהשגחה לרקע של הכפתורים בתפריט השכבות כאשר העכבר עובר עליהם */
+}
+
+/* עיצוב לטקסט בתוך השכבה */
+.classes::after {
+  content: "";
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* הטקסט יופיע כאשר העכבר עובר מעל השכבה */
+.classes:hover::after {
+  opacity: 1;
+}
+
+/* Additional styles for h1 and article in .art */
+.art h1 {
+  font-size: 48px;
+  color: #ff5500;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: rgba(255, 85, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+.art h1:hover {
+  color: #e04000;
+}
+
+.art article {
+  font-size: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.art article:hover {
+  transform: scale(1.05);
+}
+
+.disable {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.disabled:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.admin-control {
+  background-color: #3cc6e8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(217, 95, 183, 0.879);
+}
+
+.admin-control:hover {
+  background-color: #d500e0;
+}
+
+/*# sourceMappingURL=style-students.map */

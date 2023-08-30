@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>שכבה יא' דף-כיתה </title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body dir="rtl">
+    <header>
+      <div class="sayHi">
+        <h1>שכבה יא' זה כאן!</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="stadiesFlex">
+        <div class="stadiesHead">
+          <h1>מערכת שעות</h1>
+        </div>
+        <div class="chengTable">
+          <div class="adminCheng" id ="saveCheng"> שמירה </div>
+        <div class="adminCheng" id ="admin"> עריכת מערכת </div>
+        <div class="adminCheng" id="resetbutton"> מחיקת הצ'אט </div>
+        <div class="adminCheng" id="shiftCube_YA">  עריכת הקובייה</div>
+          
+      </div>
+
+        <div class="stadiesBody">
+          <div class="stadiesBodySon head">שעות</div>
+          <div class="stadiesBodySon head">יום ראשון</div>
+          <div class="stadiesBodySon head">יום שני</div>
+          <div class="stadiesBodySon head">יום שלישי</div>
+          <div class="stadiesBodySon head">יום רביעי</div>
+          <div class="stadiesBodySon head">יום חמישי</div>
+          <div class="stadiesBodySon head">יום שישי</div>
+          <!--1 שעה -->
+          <div class="stadiesBodySon">8:05</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--2 שעה -->
+          <div class="stadiesBodySon">8:45</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--3 שעה -->
+          <div class="stadiesBodySon">9:30</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--4 שעה -->
+          <div class="stadiesBodySon">10:45</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--5 שעה -->
+          <div class="stadiesBodySon">11:30</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--6 שעה -->
+          <div class="stadiesBodySon">12:30</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--7 שעה -->
+          <div class="stadiesBodySon">13:15</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <!--8 שעה -->
+          <div class="stadiesBodySon">14:15</div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+          <div class="stadiesBodySon hours"></div>
+        </div>
+      </div>
+
+      <div class="cube">
+        <div class="face front" id="frontImageURL_YA"></div>
+        <div class="face left"  id="leftImageURL_YA"></div>
+        <div class="face right" id="rightImageURL_YA"></div>
+        <div class="face back"  id="backImageURL_YA"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+
+      <aside>
+        <div class="talkToTeacher">
+          <h1>פנייה למורה</h1>
+
+          <form>
+            <textarea
+             name="ar" id="area" cols="25" rows="10"
+              placeholder="שדה חופשי"
+              maxlength="500 text"
+            ></textarea>
+            <button type="submit" class="mybutton">שלחי את בקשתך</button>
+          </form>
+        </div>
+
+        <div class="upload-homework">
+          <h3>הגשת שיעורי בית</h3>
+          <form>
+            <div class="file-upload">
+              <label for="pdf-upload" class="label-wrapper">
+                בחרי קובץ 
+              </label>
+              <input type="file" id="pdf-upload" accept=".pdf" />
+            </div>
+            <button class="mybutton" id="upload-button">
+              שלחי את השיעורים למורה
+            </button>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+  
+    <div class="foroom">
+    <h1> פורום תלמידות </h1>
+      <input type="text" placeholder="text" id="myInput" />
+      <div class="mybutton" id="sendbutton">שלחי הודעה  </div>
+    </div>
+    <footer>
+    </footer>
+
+    <script src="./classes.js"></script>
+  </body>
+</html>
